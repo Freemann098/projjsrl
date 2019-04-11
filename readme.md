@@ -1,12 +1,7 @@
-Roguelike Game Blueprint 1.0
+WetSlip  v 1.0 - Baed On Roguelike Game Blueprint 1.0
 ================================
 
-![alt tag](http://willwriteaboutvideogamesformoney.files.wordpress.com/2012/06/cq2shot3.png)
-
-Roguelike is a sub-genre of role-playing video games, characterized by random level generation, ASCII and tile-based graphics and permanent death. Roguelikes descend from the 1980 game Rogue, particularly mirroring Rogue's character- or sprite-based graphics, turn-based gameplay that gives the player the time to plan each move, and high fantasy setting.
-
-Crafted by Ido Yehieli (http://tametick.com/), creator of Cardinal Quest, the Kiwi.JS Roguelike Blueprint coupled with the Kiwi.JS game engine, this Blueprint allows users to rapidly develop a Roguelike game. 
-
+Chase Smith
 
 ##Versions
 
