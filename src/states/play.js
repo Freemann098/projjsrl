@@ -74,6 +74,7 @@ PlayState.LootTypes = {
 	WAND: 0,
 	PICKAXE: 1,
 	POTION: 2,
+	XPBALL: 3,
 }
 
 //  trap types
@@ -153,12 +154,14 @@ PlayState.initEntities = function () {
 			y: 0,
 		};
 		var rand = Math.random();
-		if(rand<1/3) {
+		if(rand<1/4) {
 			item.type = this.LootTypes.WAND;
-		} else if(rand<2/3) {
+		} else if(rand<2/4) {
 			item.type = this.LootTypes.PICKAXE;
-		} else {
+		} else if(rand<3/4) {
 			item.type = this.LootTypes.POTION;
+		} else if(rand<4/4) {
+			item.type = this.LootTypes.XPBALL;
 		}
 		do {
 			// pick a random position that is both a floor and not occupied
