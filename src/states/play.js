@@ -160,7 +160,7 @@ PlayState.initEntities = function () {
 			item.type = this.LootTypes.PICKAXE;
 		} else if(rand<3/4) {
 			item.type = this.LootTypes.POTION;
-		} else if(rand<4/4) {
+		} else {
 			item.type = this.LootTypes.XPBALL;
 		}
 		do {
@@ -268,8 +268,11 @@ PlayState.initEntitySprites = function() {
 			loot.sprite.cellIndex = 0;
 		} else if(loot.type == this.LootTypes.PICKAXE){
 			loot.sprite.cellIndex = 1;
-		} else {
+		} else if(loot.type == this.LootTypes.POTION){
 			loot.sprite.cellIndex = 2;
+		} else if(loot.type == this.LootTypes.XPBALL){
+			
+			loot.sprite.cellIndex = 3;
 		}
 		
 		this.addChild(loot.sprite);
@@ -333,6 +336,8 @@ PlayState.drawEntities = function() {
 				symbol = '^';
 			} else if(this.lootList[l].type == this.LootTypes.POTION)  {
 				symbol = '%';
+			} else if(this.LootList[l].type == this.LootTypes.XPBALL)  {
+				symbol = '>';
 			}
 			
 			this.setCell(this.lootList[l].x, this.lootList[l].y, symbol);
@@ -712,6 +717,9 @@ PlayState.pickUpLoot =  function(loot, picker) {
 		picker.shotsBar = new Kiwi.HUD.Widget.IconBar(this.game, this.textures.shot, 
 			picker.shots, picker.shots, 340 , 224);
 		this.game.huds.defaultHUD.addWidget(picker.shotsBar);
+	} else if(loot.type== self.LootTypes.XPBALL){
+		//increase xp
+		self.player.xp++;
 	}
 }
 
