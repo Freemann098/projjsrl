@@ -271,7 +271,6 @@ PlayState.initEntitySprites = function() {
 		} else if(loot.type == this.LootTypes.POTION){
 			loot.sprite.cellIndex = 2;
 		} else if(loot.type == this.LootTypes.XPBALL){
-			
 			loot.sprite.cellIndex = 3;
 		}
 		
@@ -336,7 +335,7 @@ PlayState.drawEntities = function() {
 				symbol = '^';
 			} else if(this.lootList[l].type == this.LootTypes.POTION)  {
 				symbol = '%';
-			} else if(this.LootList[l].type == this.LootTypes.XPBALL)  {
+			} else {//if(this.LootList[l].type == this.LootTypes.XPBALL)  {
 				symbol = '>';
 			}
 			
@@ -720,6 +719,7 @@ PlayState.pickUpLoot =  function(loot, picker) {
 	} else if(loot.type== self.LootTypes.XPBALL){
 		//increase xp
 		self.player.xp++;
+		this.playerXp.counter.current = self.player.xp;
 	}
 }
 

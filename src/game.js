@@ -1,7 +1,7 @@
 //Initialise the Kiwi Game. 
 var gameOptions = {
-	width: 1280,
-	height: 720
+	width: 780,
+	height: 640
 }
 
 var game = new Kiwi.Game('game', 'wetslipgame', null, gameOptions);
