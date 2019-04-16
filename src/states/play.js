@@ -485,8 +485,8 @@ PlayState.create = function (params) {
 	// create a graphics/ascii toggle button
 	this.graphicsButton = new Kiwi.GameObjects.Sprite(this, this.textures.toggleBtn, this.tileSize*this.mapSize+10, 110);
 	this.graphicsButton.cellIndex = 1;
-    this.addChild(this.graphicsButton);
-    this.graphicsButton.input.onDown.add(this.toggleGraphics, this);
+    //this.addChild(this.graphicsButton);
+    //this.graphicsButton.input.onDown.add(this.toggleGraphics, this);
 	
 	
 	// create hud widgets
