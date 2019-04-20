@@ -6,6 +6,12 @@ this.buttonPlay = null;
 IntroState.preload = function() {
     this.addImage('menuBackdrop', 'assets/img/menubg.png');
     this.addImage('buttonPlay', 'assets/img/buttonPlay.png');
+
+    GJAPI.UserLoginManual("Freemann098", "chasetoken", function(pResponse)
+    {
+        if(pResponse.success)
+            console.info("Login successful");``
+    });
 }
 
 IntroState.create = function () {
@@ -29,6 +35,8 @@ IntroState.playGame = function () {
 
     if(this.mousex > this.buttonPlay.x && this.mousex < this.buttonPlay.x + 230 &&
        this.mousey > this.buttonPlay.y && this.mousey < this.buttonPlay.y + 80){
+            this.mousex = null;
+            this.mousey = null;
             game.states.switchState("PlayState");
     }
 }

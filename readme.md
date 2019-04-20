@@ -1,41 +1,15 @@
-WetSlip  v 1.0 - Baed On Roguelike Game Blueprint 1.0
+BlocDungeon  v 1.0
 ================================
 
 Chase Smith
+https://www.chasersmith.com
+
+Baed On Roguelike Game Blueprint 1.0 made with KiwiJS
+https://github.com/gamelab/Roguelike-Blueprint
 
 ##Versions
 
 KiwiJS last version tested: 0.5.3
 	
 
-##Features
-
-This blueprint includes:
-* move with the arrow keys or by clicking/tapping in the direction you wish
-* bump into enemies to attack
-* pick up wand for ranged attack (4 bolts), click enemy to shoot once you have it
-* pick up pickaxe to gain the ability to remove walls/trees
-* pick up potion to heal
-* gain xp/levels by killing enemies.
-* traps ("slow" & "hurt") trigger when you step on them
-* 3 enemy types each showcasing a different ai-type
-* 2 map generators: forest and dungeon.
-* 2 display modes: ascii & graphics
-
-
-##How to use
-
-The PlayState demonstrates the structure of a simple roguelike game. Import the afordmentioned plugins (you can find them in the lib/plug
- directory) and create your own graphical or ascii roguelike.
- 
-The level is represented by a 2d array of characters. '.' represets a floor (walkable) and '#' a wall(blocking). In the PlayState you can see how to easily show this level using either the TileMap class (http://www.api.kiwijs.org/classes/TileMap.html) or an array of TextFields.
-
-##Contribute
-If you discover a bug or find yourself just wanting to jump on in and help make this blueprint even better please file an issue and get stuck in. We're a friendly bunch and hope people find themselves wanting to get involved. 
-
-https://github.com/gamelab/Roguelike-Blueprint/issues/new
-
-##Related Documentation 
-
-Coming soon
-"# projjsrl" 
+![alt tag](https://chasersmith.com/wp-content/uploads/2019/04/cropped-cslogo.png)
